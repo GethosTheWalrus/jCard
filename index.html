@@ -1,0 +1,60 @@
+<html>
+
+<head>
+
+	<script src="js/jquery-1.11.1.js"></script>
+	<link rel="stylesheet" href="css/jCard.css">
+
+</head>
+
+<body style="padding:0;margin:0;">
+
+	<script src="js/jCard.js"></script>
+
+	<div id='myMenu' style="position:relative;top:10%;margin:0 auto;width:200px;height:570px;height:570px;">
+
+		<script>
+
+			//Data object to pass to your function
+			var values = [{
+		        width: "200px",
+		        height: "150px",
+		        fontcolor: '#383838',
+		        data: [
+		        	{
+		        		type: 'link',
+		        		caption: 'PEF Services LLC',
+		        		href: 'https://pefundservices.com',
+		        		image: 'https://www.pefundservices.com/wp-content/themes/pef/images/logo.png'
+		        	},
+		        	{
+		        		type: 'modal',
+		        		caption: 'Cat I found on google',
+		        		href: '#',
+		        		image: 'http://www.jeremynoeljohnson.com/wp-content/uploads/2014/06/crazy_cat_3.jpg'
+		        	},
+		        	{
+		        		type: 'modal',
+		        		caption: 'Dog I found on google',
+		        		href: '#',
+		        		image: 'http://s3-ec.buzzfed.com/static/2014-06/14/15/enhanced/webdr05/anigif_enhanced-23403-1402773525-1.gif'
+		        	},
+		        	{
+		        		type: 'modal-content',
+		        		caption: 'Modal-content example',
+		        		href: '#',
+		        		image: 'http://caccioppoli.com/Animated%20gifs/Giraffe/0057.gif',
+		        		content: '<span style="color:red">This is the content that will show in the expanded view.</span>'
+		        	}
+		        ]
+		    }];
+
+			jCard('myMenu', values);
+
+		</script>
+
+	</div>
+
+</body>
+
+</html>
